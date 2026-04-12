@@ -1,0 +1,36 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 51rem;
+    border: 2px solid var(--btn-bg);
+    background-color: var(--nav-bg); 
+}
+
+.info-date {
+    color: white;
+    opacity: 50%;
+    margin-left: 20px;
+}
+
+.node-container {
+    background-color: var(--nav-bg);
+    display: flex;
+    padding-left: 50px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+    height: 30rem;
+    width: 51rem;
+    border: 2px solid var(--btn-bg);
+}
