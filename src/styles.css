@@ -1,1 +1,35 @@
+:root {
+    --main-bg: #25272E;
+    --nav-bg: #2B2D35;
+    --btn-bg: #7A3AAA;
+    --input-bg: var(--nav-bg);
+    --input-label-bg: var(--btn-bg);
+}
 
+body {
+    background-color: var(--main-bg);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--nav-bg);
+    padding: 20px;
+}
+
+.btn {
+    background-color: var(--btn-bg);
+    border: 0px white solid;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
