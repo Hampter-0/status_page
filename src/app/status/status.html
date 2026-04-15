@@ -1,19 +1,83 @@
 <div class="main-content">
     <nav class="nav">
-        <!-- logo  -->
-        <button class="btn" routerLink="/status"> status </button>
-        <button class="btn" routerLink="/maintenance"> Maintenance </button>
-        <button class="btn"> incidents </button>
-        <button class="btn" onclick="window.location.href='https://portfolio.hampternom.nl/#contact'">
-            Contact
-        </button>
+        <div class="nav-left">
+            <div class="nav-logo">hampternom.nl</div>
+        </div>
+        <div class="nav-center">
+            <button class="nav-btn active" routerLink="/status">Status</button>
+            <button class="nav-btn" routerLink="/maintenance">Maintenance</button>
+            <button class="nav-btn" routerLink="/incidents">Previous incidents</button>
+        </div>
+        <div class="nav-right">
+            <button class="btn" onclick="window.location.href='https://portfolio.hampternom.nl/#contact'">Get in touch</button>
+        </div>
     </nav>
 
-    <p class="info"> tictac2 database migration <span class="info-date"> Apr 12, 2026 at 12pm CEST </span> </p>
+    <div class="content-wrapper">
+        <div class="info-banner">
+            <span>Tictac2 API reset scheduled</span>
+            <span class="info-date">Apr 12, 2026 at 12pm CEST</span>
+        </div>
 
-    <div class="node-container">
-        <div class="node"> nodes / backend API's</div>
-        <div class="node"> tictac2 </div>
+        <div class="status-banner operational">
+            <span class="status-icon">✓</span>
+            All services are operational
+        </div>
+
+        <div class="service-container">
+            <div class="container-header">Nodes / services</div>
+            
+            <div class="service-row">
+                <div class="service-name">Node 1</div>
+                <div class="service-right">
+                    <span class="response-time">12ms</span>
+                    <span class=" online">✓ Operational</span>
+                </div>
+            </div>
+
+            <div class="service-row">
+                <div class="service-name">Mail Server</div>
+                <div class="service-right">
+                    <span class="response-time">-</span>
+                    <span class="offline">X down</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-container">
+            <div class="container-header">web</div>
+            
+            <div class="service-row">
+                <div class="service-name">Portfolio</div>
+                <div class="service-right">
+                    <span class="response-time">45ms</span>
+                    <span class=" online">✓ Operational</span>
+                </div>
+            </div>
+
+            <div class="service-row">
+                <div class="service-name">Pterodactyl Panel</div>
+                <div class="service-right">
+                    <span class="response-time">32ms</span>
+                    <span class=" online">✓ Operational</span>
+                </div>
+            </div>
+
+            <div class="service-row">
+                <div class="service-name">phpMyAdmin</div>
+                <div class="service-right">
+                    <span class="response-time">38ms</span>
+                    <span class=" online">✓ Operational</span>
+                </div>
+            </div>
+
+            <div class="service-row">
+                <div class="service-name">Webmail</div>
+                <div class="service-right">
+                    <span class="response-time">41ms</span>
+                    <span class=" online">✓ Operational</span>
+                </div>
+            </div>
+        </div>
     </div>
-
 </div>

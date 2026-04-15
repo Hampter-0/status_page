@@ -1,36 +1,138 @@
 .main-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+    min-height: 100vh;
 }
 
-.info {
+.content-wrapper {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 3rem;
-    width: 51rem;
+    gap: 30px;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.info-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    width: 100%;
     border: 2px solid var(--btn-bg);
-    background-color: var(--nav-bg); 
+    background-color: var(--card-bg);
 }
 
 .info-date {
-    color: white;
-    opacity: 50%;
-    margin-left: 20px;
+    color: var(--text-muted);
+    font-size: 14px;
 }
 
-.node-container {
-    background-color: var(--nav-bg);
+.status-banner {
     display: flex;
-    padding-left: 50px;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 30px;
-    padding-top: 20px;
-    height: 30rem;
-    width: 51rem;
-    border: 2px solid var(--btn-bg);
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 25px;
+    width: 100%;
+    background-color: var(--card-bg);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.status-banner.operational {
+    border: 2px solid var(--status-online);
+}
+
+.status-banner.degraded {
+    border: 2px solid var(--status-degraded);
+}
+
+.status-banner.down {
+    border: 2px solid var(--status-offline);
+}
+
+.status-icon {
+    color: var(--status-online);
+}
+
+.status-banner.degraded .status-icon {
+   color: var(--status-degraded);
+}
+
+.status-banner.down .status-icon {
+    color: var(--status-offline);
+}
+
+.service-container {
+    background-color: var(--card-bg);
+    width: 100%;
+    border: 2px solid var(--border);
+    padding: 35px;
+}
+
+.container-header {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--border);
+    color: var(--text);
+}
+
+.service-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    background-color: var(--card-footer-bg);
+    border-left: 4px solid var(--btn-bg);
+    margin-bottom: 15px;
+}
+
+.service-row:last-child {
+    margin-bottom: 0;
+}
+
+.service-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.service-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.response-time {
+    background-color: var(--nav-dark);
+    border: 1px solid var(--border-dark);
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.status-badge {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.online {
+    color: var(--status-online);
+}
+
+.offline {
+    color: var(--status-offline);
+}
+
+.degraded {
+    color: var(--status-degraded);
 }
