@@ -1,1 +1,59 @@
-<p>hampter</p>
+<div class="main-content">
+    <nav class="nav">
+        <div class="nav-left">
+            <div class="nav-logo" onclick="window.open('https://hampternom.nl', '_blank')">hampternom.nl</div>
+        </div>
+        <div class="nav-center">
+            <button class="nav-btn" routerLink="/status">Status</button>
+            <button class="nav-btn" routerLink="/maintenance">Maintenance</button>
+            <button class="nav-btn active" routerLink="/incidents">Previous incidents</button>
+        </div>
+        <div class="nav-right">
+            <button class="btn" onclick="window.location.href='https://portfolio.hampternom.nl/#contact'">Get in
+                touch</button>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="incidents-header">
+            <h1>Previous incidents</h1>
+            <div class="date-navigation">
+                <button class="date-nav-btn">‹</button>
+                <span class="date-range">Feb 2026 to Apr 2026</span>
+                <button class="date-nav-btn">›</button>
+            </div>
+        </div>
+
+        <div class="incidents-container">
+            <div class="month-title">April 2026</div>
+            <div class="no-incidents">
+                <span class="check-icon">✓</span>
+                No incidents reported
+            </div>
+        </div>
+
+        <div class="incidents-container">
+            <div class="month-title">March 2026</div>
+            <div class="no-incidents">
+                <span class="check-icon">✓</span>
+                No incidents reported
+            </div>
+        </div>
+
+        <div class="incidents-container">
+            <div class="month-title">February 2026</div>
+
+            <div class="incident-item">
+                <div class="incident-header">
+                    <div class="incident-title">Database Connection Issues</div>
+                    <div class="incident-status resolved">Resolved</div>
+                </div>
+                <div class="incident-date">Feb 15, 2026 - 14:30 CEST</div>
+                <div class="incident-description">
+                    issues with contact form on portfolio.
+                </div>
+                <div class="incident-duration">Duration: 45 minutes</div>
+            </div>
+        </div>
+    </div>
+</div>

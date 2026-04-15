@@ -1,0 +1,160 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.incidents-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    width: 100%;
+    background-color: var(--card-bg);
+    border: 2px solid var(--border);
+}
+
+.incidents-header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text);
+}
+
+.date-navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.date-nav-btn {
+    background-color: var(--nav-dark);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: opacity 0.2s;
+}
+
+.date-nav-btn:hover {
+    opacity: 0.8;
+}
+
+.date-range {
+    color: var(--text-muted);
+    font-size: 15px;
+    min-width: 180px;
+    text-align: center;
+}
+
+.incidents-container {
+    background-color: var(--card-bg);
+    width: 100%;
+    border: 2px solid var(--border);
+    padding: 35px;
+}
+
+.month-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: var(--text);
+}
+
+.no-incidents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 60px 20px;
+    color: var(--text-muted);
+    font-size: 15px;
+}
+
+.check-icon {
+    width: 24px;
+    height: 24px;
+    background-color: var(--nav-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.incident-item {
+    padding: 25px;
+    background-color: var(--card-footer-bg);
+    border-left: 4px solid var(--status-offline);
+    margin-bottom: 15px;
+}
+
+.incident-item:last-child {
+    margin-bottom: 0;
+}
+
+.incident-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.incident-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.incident-status {
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.incident-status.resolved {
+    background-color: rgba(90, 154, 106, 0.2);
+    color: var(--status-online);
+    border: 1px solid var(--status-online);
+}
+
+.incident-status.ongoing {
+    background-color: rgba(154, 74, 74, 0.2);
+    color: var(--status-offline);
+    border: 1px solid var(--status-offline);
+}
+
+.incident-date {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.incident-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text);
+    margin-bottom: 12px;
+}
+
+.incident-duration {
+    font-size: 13px;
+    color: var(--text-muted);
+    padding-top: 12px;
+    border-top: 1px solid var(--border-dark);
+}
