@@ -128,13 +128,13 @@
 }
 
 .incident-status.resolved {
-    background-color: rgba(90, 154, 106, 0.2);
+    background-color: var(--incident-status-resolved-bg);
     color: var(--status-online);
     border: 1px solid var(--status-online);
 }
 
 .incident-status.ongoing {
-    background-color: rgba(154, 74, 74, 0.2);
+    background-color: var(--incident-status-ongoing-bg);
     color: var(--status-offline);
     border: 1px solid var(--status-offline);
 }
